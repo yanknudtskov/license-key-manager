@@ -1,0 +1,15 @@
+You can assign a key to a user and then call the script to check if the key is valid or not.
+
+Installation
+
+1) Create a new mySQL database and user
+
+2) Add the new user to the database with full permissions granted
+
+3) Upload the contents of the /server/ folder to your server where you want to install the license server script.
+
+4) Navigate to the /intsall/ directory and follow the on screen directions http://example.com/server/install/
+
+5) After verifying the script install make sure you delete the /install/ directory.
+
+That's all. Thank you.. :)

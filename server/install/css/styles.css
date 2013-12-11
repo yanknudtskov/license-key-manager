@@ -1,0 +1,134 @@
+A {
+	TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: none
+}
+UL {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 0px
+}
+LI {
+	MARGIN-LEFT: 18px
+}
+LI.error {
+	MARGIN-LEFT: 15px
+}
+LI.grey {
+	MARGIN-LEFT: 15px
+}
+FORM {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+
+.textform {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.textform A {
+	COLOR: #2971c1
+}
+.text {
+	FONT-SIZE: 12px; COLOR: #515151; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.text H1 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: normal; FONT-SIZE: 18px; MARGIN-BOTTOM: 15px; COLOR: #000000; LINE-HEIGHT: 15px
+}
+.text H2 {
+	MARGIN-TOP: 0px; FONT-SIZE: 16px; MARGIN-BOTTOM: 15px; COLOR: #000000
+}
+.text H3 {
+	MARGIN-TOP: 0px; FONT-SIZE: 14px; MARGIN-BOTTOM: 15px; COLOR: #000000
+}
+.text H4 {
+	MARGIN-TOP: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 15px; COLOR: #000000
+}
+.text SPAN.date {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff
+}
+.text SPAN.sub {
+	FONT-SIZE: 11px; COLOR: #676767
+}
+.text A.sublink {
+	FONT-SIZE: 11px; COLOR: #666666
+}
+.text B.black {
+	COLOR: #000000
+}
+.text SPAN.black {
+	COLOR: #000000
+}
+
+.table {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: #515151; PADDING-TOP: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.table SPAN.header {
+	COLOR: #ffffff
+}
+.table SPAN.headergrey {
+	COLOR: #676767
+}
+.table A.black {
+	COLOR: #000000
+}
+.table SPAN.black {
+	COLOR: #000000
+}
+.table A.blocked {
+	COLOR: #e0a0a0
+}
+
+.form_button {
+	cursor: pointer;
+	border:1px;
+	-webkit-box-shadow:0 6px 9px #999;
+	box-shadow:0 6px 9px #999;
+	border-radius:6px 6px 6px 6px;
+	height:40px;
+	width:80px;
+	opacity:0.8;
+	FONT-WEIGHT: bold;
+}
+
+.form_button:hover {
+	cursor: pointer;
+	border:1px;
+	-webkit-box-shadow:0 6px 9px #999;
+	box-shadow:0 6px 9px #999;
+	border-radius:6px 6px 6px 6px;
+	height:40px;
+	width:80px;
+	opacity:1.0;
+	FONT-WEIGHT: bold;
+	background:#209401;
+	color:#ffffff;
+}
+
+.form_button2 {
+	cursor: pointer;
+	border:1px;
+	-webkit-box-shadow:0 6px 9px #999;
+	box-shadow:0 6px 9px #999;
+	border-radius:6px 6px 6px 6px;
+	height:40px;
+	width:80px;
+	opacity:0.8;
+	FONT-WEIGHT: bold;
+}
+
+.form_button2:hover {
+	cursor: pointer;
+	border:1px;
+	-webkit-box-shadow:0 6px 9px #999;
+	box-shadow:0 6px 9px #999;
+	border-radius:6px 6px 6px 6px;
+	height:40px;
+	width:80px;
+	opacity:1.0;
+	FONT-WEIGHT: bold;
+	background:#FC032C;
+	color:#ffffff;
+}
+
+.help_icon{
+	cursor: help;
+	border:1px;
+}

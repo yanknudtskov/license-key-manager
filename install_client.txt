@@ -1,0 +1,60 @@
+
+Open index.php in the client folder. There will be a code that looks like this:
+
+<?php
+
+/*
+Checks to ensure key.php hasn't been removed or renamed.
+*/
+$filename = 'key.php';
+if (file_exists($filename)) { } 
+else {
+    exit("<h4>LICENSE ERROR: </h4><font color=black>The file at http://yourdomain.com/<b>$filename</b> either has been removed or renamed.
+<ul>
+<font color=red><li>$filename must be left as-is (not modified, removed, renamed) or this script will not function.</li></font>
+</ul>
+</font>");
+}
+
+require( "key.php" );
+
+/*
+Checks license server to see if the license key is valid for this script.
+*/
+error_reporting(0);
+if( !( ini_get(allow_url_fopen) ) ) exit('Configuration Error: allow_url_fopen must be enabled on your server for this script to work');
+define( "LICENSE_SERV", "http://example.com/server/check.php?key=" );
+$LICENSE_SERV=LICENSE_SERV;
+$LICENSE_KEY=LICENSE_KEY;
+$licserv = "$LICENSE_SERV$LICENSE_KEY";
+$lines = @file($licserv);
+foreach ($lines as $line_num => $line) { 
+$license = htmlspecialchars($line); 
+if ($license == "INVALID") { 
+   exit("<font color=black><b>Invalid License Key</b></font>"); 
+} 
+}
+
+?>
+
+Copy the above code to the root index.php file or an important functions.php file. Just keep in mind you really only need to use the above script once within your script you want to distribute. Just make sure what ever page you copy the above code to is a very important php file on your script that your script can not run if it was removed from your script. This way, if someone tries to remove the above scipt from your site by removing the file itself your script will not function or if someone enters the wrong product license key the script will go down until they supply a valid key.
+
+After that you will need to encode your php page so it is not viewable by the user. This will protect the php file you added the above script to so the user does not manually remove your license key callback. Encoding your php is not 100% secure from reverse engineering. However, most people will not know how to reverse engineer your encoded php so this ensures you have minimal piracy of your software. Like any other software you will still need to monitor and mitigate your anti-piracy efforts. In the event you find a key pirated you would simply remove that key from your license key server managekeys.php admin section.
+
+Now let's get started encoding.. Go to this url now
+
+http://www.rightscripts.com/phpencode/
+
+If you copied the license callback code that I listed above within your index.php file then you want to simply open your index.php file now and copy your entire php code show incliuding opening and closing tags into the box on 
+
+http://www.rightscripts.com/phpencode/
+
+Then click, Encode.
+
+That's it. Now just copy and paste the results back to your index.php page and hit save.
+
+Also make sure you upload the key.php file to the root of your script. 
+
+* Not all folks choose to place the license callback code from above within their index.php files. In this event simply repeat the same proceedure I chose for the index.php above and encode your php files as needed for where ever you placed the license callback code.
+
+** I would NOT recommend you encode all your php files. This only aggravates users and makes the script less likely to grow in terms of community size. People like friendly easy code. SO I receommend you do NOT encode more than 1 or 2 files. If you place the license code in the main functions file in your script then your script is sure to fail if some user enters the wrong license key and the license script disables all your main functions.
