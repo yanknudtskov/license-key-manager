@@ -2,12 +2,12 @@
 <TBODY>
 <tr><td height=20></td></tr>
 <TR>
-<TD bgColor=#d6d6d6><IMG height=1 alt="" src="img/free.gif" width=1 border=0></TD>
+<TD bgColor=#d6d6d6>&nbsp;</TD>
 </TR>
 <TR><TD height=7></TD></TR>
 </TBODY>
 </TABLE>
-<?=$copyright;?> - <?=$application_name;?> <?=$application_version;?> »
+<?=$copyright;?> - <?=$application_name;?> <?=$application_version;?> ï¿½
 <? if($license_agreement_page != ""){ ?>
     <A href="<?=$license_agreement_page;?>" target=_blank>License</A>
 <? } ?>
