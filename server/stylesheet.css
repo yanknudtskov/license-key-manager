@@ -62,19 +62,15 @@ tr:hover {
 #addkey_top {
 	width: 300px;
 	height: 56px;
-	background-image: url('images/addkeys_01.png');
 }
 
 #searchkey_top {
 	width: 300px;
 	height: 56px;
-	background-image: url('images/searchkey_01.png');
 }
 
 #addkey_middle {
 	width: 300px;
-	background-image: url('images/addkeys_02.png');
-	background-repeat: y-repeat	
 }
 
 #addkey_content {
@@ -85,5 +81,4 @@ tr:hover {
 #addkey_bottom {
 	width: 300px;
 	height: 27px;
-	background-image: url('images/addkeys_03.png');
 }
