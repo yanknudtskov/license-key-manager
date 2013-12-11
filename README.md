@@ -1,2 +1,2 @@
-License-Key-Manager
+License Key Manager
 ===================
