@@ -8,6 +8,8 @@ Now that I said that, you will understand my lingo better moving forward.
 
 The first step to setting up License Key Manager is to install a fresh copy of WordPress (tested upto 3.8 RC 2).
 
+##ATTENTION: Do not add any WordPress plugins. 
+
 This WordPress site will be for your server node. The server node is what connects to the client node and verifies that the license key is valid.
 
 Once you have installed WordPress, upload the following folder via ftp (ie: wp-content/themes/license-key-server ).
