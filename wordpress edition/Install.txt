@@ -1,0 +1,51 @@
+READ THIS NOW:
+
+There are two parts to the License Key Manager WordPress Edition.
+
+The first part is the 'server node' and the second part is the 'client node'.
+
+Now that I said that, you will understand my lingo better moving forward.
+
+The first step to setting up License Key Manager is to install a fresh copy of WordPress (tested upto 3.8 RC 2).
+
+This WordPress site will be for your server node. The server node is what connects to the client node and verifies that the license key is valid.
+
+Once you have installed WordPress, upload the following folder via ftp (ie: wp-content/themes/license-key-server ).
+
+Now, login your wp-admin. Once logged in, head on over to your Appearence menu. Select the "License Key Server" theme and activate it.
+
+That's it! Your License Key Server is now setup. Head on over to your dashboard now and please review the documentation regarding the 
+
+php code you need to integrate within your own scripts, themes, plugins, on-wordpress and off-wordpress, etc.
+
+The documentation consists now of just the php snippet you need. I will be adding more documentation with later updates. If you'd like to 
+
+contribute, please let me know. Oh btw, you need to keep an eye here for the updates: https://github.com/icryptic/license-key-manager
+
+The php snippet needs to be edited for each client/user. 
+
+You need to add a key within your License Key Server, then add that key to the second line of the code on your dashboard. It looks like this: 
+
+define( "LICENSE_KEY", "000-0000-0000-0000" );
+
+So if you create a license key that is 123-4567-8901-234
+
+Then the php code should look like this:
+
+define( "LICENSE_KEY", "123-4567-8901-234" );
+
+If you are preparing a brand new Wordpress site for a client, you could place the php snippet within their wp-config.php just below <?php
+
+or you could create a dummy plugin, label it something discreet that sounds like a keeper and apply the php snippet within that. Really, there is 
+
+a 1,000 ways you can do it, plus your not limited to Wordpress either. What I mean by that is say you make a cool mobile app for example, or a Drupal 
+
+website, or Joomla, well, you still can use the php snippet on them as well. You should just determine the best file to place it in. I recommend using
+
+an important file like a config file. This way, they no pay, you simply login your License Key Server, locate their key, save a copy of it, then click 
+
+delete to their key (yes, I will make that process better in later versions). Mark my words, you will have your money by the end of the day, if not almost 
+
+instantly. Once they pay, you take the key and re-add it to the License Key Server.
+
+
