@@ -9,8 +9,10 @@ This project is a work in progress... what that means is that the script works g
 
 Php Standalone Requirements:
 * PHP: 5.2
-* short_open_tag: on (only needed during install, this will change in later versions.)
+* allow_url_fopen: on
+* short_open_tag: on
 
 WordPress Edition Requirements:
 * PHP: 5.2
-* WordPress 3.7.1 tested upto 3.8 RC 2
+* allow_url_fopen: on
+* WordPress 3.7.1 tested up to 3.8
