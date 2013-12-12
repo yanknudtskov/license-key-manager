@@ -32,5 +32,5 @@ class edf_dashboard {
     }
 
 
-// instantiate plugin's class
+// instantiate dashboard class
 $GLOBALS['plugin_edf_dashboard'] = new edf_dashboard();
