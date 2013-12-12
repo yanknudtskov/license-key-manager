@@ -1,20 +1,7 @@
 <?php
 
-//Error Reporting Disabled by Default
-error_reporting(0);
-
-//Checks to ensure key.php hasn't been removed or renamed.
-$filename = 'key.php';
-if (file_exists($filename)) { 
-    } else {
-    exit("<h4>LICENSE ERROR: </h4><font color=black>The file at http://yourdomain.com/<b>$filename</b> either has been removed or renamed.
-<ul>
-    <li><font color=red>$filename must be left as-is (not modified, removed, renamed) or this script will not function.</font></li>
-</ul>
-</font>");
-}
-
-require( "key.php" );
+//Your users unique license key
+define( "LICENSE_KEY", "000-0000-0000-0000" );
 
 //Checks license server to see if the license key is valid for this script.
 if( !( ini_get(allow_url_fopen) ) ) exit('Configuration Error: allow_url_fopen must be enabled on your server for this script to work');
