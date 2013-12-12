@@ -10,7 +10,7 @@ while ( have_posts() ) : the_post();
 
 ?>
 
-<h1><span style="color:#008000">VALID</span></h1>
+<h1>VALID</h1>
 
 <?php 
 
