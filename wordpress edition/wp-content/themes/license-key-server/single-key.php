@@ -10,7 +10,6 @@ while ( have_posts() ) : the_post();
 
 ?>
 
-<h4>LICENSE KEY: <?php the_title(); ?></h4>
 <h1><span style="color:#008000">VALID</span></h1>
 
 <?php 
