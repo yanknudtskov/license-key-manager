@@ -13,4 +13,4 @@ Php Standalone Requirements:
 
 WordPress Edition Requirements:
 * PHP: 5.2
-* WordPress 3.7.1 test upto 3.8 RC 2
+* WordPress 3.7.1 tested upto 3.8 RC 2
