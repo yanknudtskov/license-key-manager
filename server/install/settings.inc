@@ -25,7 +25,7 @@
     $license_agreement_page = "../license.txt"; 
 
     //Copyright
-    $copyright              = "&copy; 2013 Jason Jersey."; 
+    $copyright              = "&copy; 2013 Jason Jersey"; 
 
     //Icon max 40x40
     $logo                   = "images/settings.png"; 
@@ -34,6 +34,6 @@
     $sql_dump               = "database.sql";
 
     //SQL stuff you want imported into the database
-    $sql_import             = "CREATE TABLE `keys` ( `id` TINYINT( 10 ) NOT NULL AUTO_INCREMENT, `key` VARCHAR( 50 ) NOT NULL, PRIMARY KEY ( `id` ) )";
+    $sql_import             = "CREATE TABLE 'keys' ( 'id' TINYINT( 10 ) NOT NULL AUTO_INCREMENT, 'key' VARCHAR( 50 ) NOT NULL, PRIMARY KEY ( 'id' ) )";
 
 ?>
