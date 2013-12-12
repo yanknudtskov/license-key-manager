@@ -34,10 +34,6 @@
     $sql_dump               = "database.sql";
 
     //SQL stuff you want imported into the database
-    $sql_import             = "CREATE TABLE `keys` (
-`id` TINYINT( 10 ) NOT NULL AUTO_INCREMENT,
-`key` VARCHAR( 50 ) NOT NULL,
-PRIMARY KEY ( `id` )
-)";
+    $sql_import             = "CREATE TABLE `keys` ( `id` TINYINT( 10 ) NOT NULL AUTO_INCREMENT, `key` VARCHAR( 50 ) NOT NULL, PRIMARY KEY ( `id` ) )";
 
 ?>
