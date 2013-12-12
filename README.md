@@ -9,4 +9,4 @@ This project is a work in progress... what that means is that the script works g
 
 Requires 
 * PHP: 5.2
-* short_open_tag: on
+* short_open_tag: on (only needed during install, this will change in later versions.)
