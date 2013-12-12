@@ -7,6 +7,10 @@ Have you ever built a cool app or a website and by time the project was over and
 
 This project is a work in progress... what that means is that the script works great, however I could really clean it up a bit and will as we move forward and I rollout version releases here: https://github.com/icryptic/License-Key-Manager/releases
 
-Requires 
+Php Standalone Requirements:
 * PHP: 5.2
 * short_open_tag: on (only needed during install, this will change in later versions.)
+
+WordPress Edition Requirements:
+* PHP: 5.2
+* WordPress 3.7.1 test upto 3.8 RC 2
