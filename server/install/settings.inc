@@ -1,31 +1,43 @@
 <?php
     
-    $config_file_default    = "configuration"; //Your config file template
+    //Your config file template
+    $config_file_default    = "configuration";
    
-    $config_file_directory  = "../"; //What directory to save your config file to?	
+    //What directory to save your config file to
+    $config_file_directory  = "../";	
 
-    $config_file_name       = "config.php"; //What should your config file be called?
+    //What should your config file be called
+    $config_file_name       = "config.php";
    
-    $config_file_path       = $config_file_directory.$config_file_name; //Leave this alone
+    //Leave this alone
+    $config_file_path       = $config_file_directory.$config_file_name;
 
-    $application_name       = "License Key Manager"; //Your software name
+    //Your software name
+    $application_name       = "License Key Manager"; 
 
-    $application_version    = "1.0.0"; //Your software version
+    //Your software version
+    $application_version    = "1.0.0"; 
 
-    $application_start_file = "../admin.php"; //Redirect to after install
+    //Redirect to after install
+    $application_start_file = "../admin.php"; 
 
-    $license_agreement_page = "../license.txt"; //License file
+    //License file
+    $license_agreement_page = "../license.txt"; 
 
-    $copyright              = "&copy; 2013 Jason Jersey."; //Copyright
+    //Copyright
+    $copyright              = "&copy; 2013 Jason Jersey."; 
 
-    $logo                   = "images/settings.png"; //Icon max 40w × 40h
+    //Icon max 40x40
+    $logo                   = "images/settings.png"; 
 
-    $sql_dump               = "database.sql"; //Initializes SQL dump. Do-not edit or delete this file.
+    //Initializes SQL dump. Do-not edit or delete this file
+    $sql_dump               = "database.sql";
 
+    //SQL stuff you want imported into the database
     $sql_import             = "CREATE TABLE `keys` (
 `id` TINYINT( 10 ) NOT NULL AUTO_INCREMENT,
 `key` VARCHAR( 50 ) NOT NULL,
 PRIMARY KEY ( `id` )
-)"; //SQL stuff you want imported into the database.
+)";
 
 ?>
