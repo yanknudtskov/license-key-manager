@@ -9,25 +9,25 @@ This project is a work in progress... what that means is that the script works g
 
 ***
 
-### System Requirements:
-
-Php Standalone Requirements:
+#### Php Standalone Requirements:
 * PHP: 5.2
 * allow_url_fopen: on
 * short_open_tag: on
 
 
-WordPress Edition Requirements:
+#### WordPress Edition Requirements:
 * PHP: 5.2+
 * WordPress 3.7.1 tested up to 3.8
 
+***
 
-Last Updated:
+#### Last Updated:
 * php standalone (2010)
 * wordpress edition (12/13/2013)
 
+***
 
-Documentation: WordPress Edition:
+#### Documentation: WordPress Edition:
 
 There are two parts to the License Key Manager WordPress Edition.
 
