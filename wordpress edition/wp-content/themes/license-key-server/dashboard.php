@@ -13,6 +13,7 @@
    </h2>
     <div style="margin-top: 30px">
 <h4>Documentation: Client Node</h4>
+To get started, first read the <a target="_blank" href="https://docs.google.com/document/d/1mQFf3UhCT42_X_xM_JDCzemN2Py_aJTF-kdRc-lMpho/edit?usp=sharing">documentation</a>.
 <pre>//Your users unique license key
 define('KEY_CODE', '0000-0000-0000-0000');
 
