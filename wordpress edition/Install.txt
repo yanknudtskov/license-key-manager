@@ -18,7 +18,17 @@ Then the php code should look like this:
 
 define('KEY_CODE', '123-4567-8901-234');
 
-If you are preparing a brand new Wordpress site for a client, you could should place the php snippet within their wp-login.php just below the opening <?php. On other platforms, such as Drupal, Joomla, any php script - I recommend using an important file like a login or config file. This way, they no pay, you simply login your License Key Server, locate their key, save a copy of it, then click delete to their key (yes, I will make that process better in later versions). Mark my words, you will have your money by the end of the day, if not almost instantly. Once they pay, you take the key and re-add it to the License Key Server.
+If you are preparing a brand new Wordpress site for a client, you could should place the php snippet within their wp-login.php just below the opening <?php. 
+
+
+You may also place the snippet just after the opening <?php tag in one of the following files as well: 
+
+* wp-settings.php
+* wp-login.php
+* wp-config.php
+* wp-load.php
+
+For just plugins or themes, you probably will want to link a new function to the snippet. On other platforms, such as Drupal, Joomla, any php script - I recommend using an important file like a login or config file. This way, they no pay, you simply login your License Key Server, locate their key, save a copy of it, then click delete to their key (yes, I will make that process better in later versions). Mark my words, you will have your money by the end of the day, if not almost instantly. Once they pay, you take the key and re-add it to the License Key Server.
 
 If you are having any problems with the WordPress Edition of License Key Manager, then maybe you should consider using the Php Standalone version. I've used that for years with zero problems, simply flawless. The WordPress Edition is still brand new, so please send me your feedback so I can make sure any issues are resolved.
 
