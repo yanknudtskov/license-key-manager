@@ -9,19 +9,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>License Key Server</title>
 	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-admin-css'  href='wp-admin/css/wp-admin.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='buttons-css'  href='wp-includes/css/buttons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='colors-fresh-css'  href='wp-admin/css/colors.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='<?php echo get_bloginfo('wpurl'); ?>/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-admin-css'  href='<?php echo get_bloginfo('wpurl'); ?>/wp-admin/css/wp-admin.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='<?php echo get_bloginfo('wpurl'); ?>/wp-includes/css/buttons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colors-fresh-css'  href='<?php echo get_bloginfo('wpurl'); ?>/wp-admin/css/colors.min.css' type='text/css' media='all' />
 <!--[if lte IE 7]>
-<link rel='stylesheet' id='ie-css'  href='wp-admin/css/ie.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ie-css'  href='<?php echo get_bloginfo('wpurl'); ?>/wp-admin/css/ie.min.css' type='text/css' media='all' />
 <![endif]-->
 <meta name='robots' content='noindex,follow' />
 	</head>
 	<body class="login login-action-login wp-core-ui">
 	<div id="login">
 	
-<form name="loginform" id="loginform" action="wp-login.php" method="post">
+<form name="loginform" id="loginform" action="<?php echo get_bloginfo('wpurl'); ?>/wp-login.php" method="post">
 	<p>
 	<label for="user_login">Username<br />
 	<input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
@@ -33,7 +33,7 @@
 	<p class="forgetmenot"><label for="rememberme">
         <input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> Remember</label>
         <br /><br />
-        <a style="font-size:12px" href="wp-login.php?action=lostpassword" rel="nofollow">Forgot password?</a>
+        <a style="font-size:12px" href="<?php echo get_bloginfo('wpurl'); ?>/wp-login.php?action=lostpassword" rel="nofollow">Forgot password?</a>
         </p>
 	<p class="submit">
 	<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />
