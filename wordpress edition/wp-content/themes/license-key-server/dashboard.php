@@ -14,28 +14,12 @@
     <div style="margin-top: 30px">
 <h4>Documentation: Client Node</h4>
 <pre>//Your users unique license key
-define( "LICENSE_KEY", "000-0000-0000-0000" );
+define('KEY_CODE', '0000-0000-0000-0000');
 
-//Checks license server to see if the license key is valid
-if( !( ini_get(allow_url_fopen) ) ) exit('ERROR: allow_url_fopen must be enabled on your server.');
-    
-    define( "LICENSE_SERV", "<?php echo get_bloginfo('wpurl'); ?>/?key=" );
+//Callback license key server
+$LICENSE_KEY = KEY_CODE;
+$keydata = file_get_contents("<?php echo get_bloginfo('wpurl'); ?>/?key=$LICENSE_KEY");
 
-    $LICENSE_SERV = LICENSE_SERV;
-    $LICENSE_KEY = LICENSE_KEY;
-    $licserv = "$LICENSE_SERV$LICENSE_KEY";
-    $lines = @file($licserv);
-    
-    foreach ($lines as $line_num => $line) { 
-    $license = htmlspecialchars($line); 
-    
-    if ($license == "VALID") { 
-    //Valid License Key
-    } else {
-    //Invalid License Key
-    exit("ERROR: Invalid License Key"); 
-   } 
-   
-}</pre>
+if(strpos($keydata, 'GOOD') !== FALSE){ }else{ exit("INVALID LICENSE KEY"); }</pre>
     </div>
 </div>
