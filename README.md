@@ -13,6 +13,5 @@ Php Standalone Requirements:
 * short_open_tag: on
 
 WordPress Edition Requirements:
-* PHP: 5.2
-* allow_url_fopen: on
+* PHP: 5.2+
 * WordPress 3.7.1 tested up to 3.8
