@@ -7,14 +7,14 @@
 	<!--<![endif]-->
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Weblog title &rsaquo; Log In</title>
-	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=3.8-RC2' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css?ver=3.8-RC2' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-admin-css'  href='wp-admin/css/wp-admin.min.css?ver=3.8-RC2' type='text/css' media='all' />
-<link rel='stylesheet' id='buttons-css'  href='wp-includes/css/buttons.min.css?ver=3.8-RC2' type='text/css' media='all' />
-<link rel='stylesheet' id='colors-fresh-css'  href='wp-admin/css/colors.min.css?ver=3.8-RC2' type='text/css' media='all' />
+	<title>License Key Server</title>
+	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-admin-css'  href='wp-admin/css/wp-admin.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='wp-includes/css/buttons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colors-fresh-css'  href='wp-admin/css/colors.min.css' type='text/css' media='all' />
 <!--[if lte IE 7]>
-<link rel='stylesheet' id='ie-css'  href='wp-admin/css/ie.min.css?ver=3.8-RC2' type='text/css' media='all' />
+<link rel='stylesheet' id='ie-css'  href='wp-admin/css/ie.min.css' type='text/css' media='all' />
 <![endif]-->
 <meta name='robots' content='noindex,follow' />
 	</head>
