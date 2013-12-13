@@ -10,13 +10,13 @@ This WordPress site will be for your server node. The server node is what connec
 
 The documentation consists now of just the php snippet you need. I will be adding more documentation with later updates. If you'd like to contribute, please let me know. Oh btw, you need to keep an eye here for the updates: https://github.com/icryptic/license-key-manager\The php snippet needs to be edited for each client/user. You need to add a key within your License Key Server, then add that key to the second line of the code on your dashboard. It looks like this: 
 
-define( "LICENSE_KEY", "000-0000-0000-0000" );
+define('KEY_CODE', '000-0000-0000-0000');
 
 So if you create a license key that is 123-4567-8901-234
 
 Then the php code should look like this:
 
-define( "LICENSE_KEY", "123-4567-8901-234" );
+define('KEY_CODE', '123-4567-8901-234');
 
 If you are preparing a brand new Wordpress site for a client, you could should place the php snippet within their wp-login.php just below the opening <?php. On other platforms, such as Drupal, Joomla, any php script - I recommend using an important file like a login or config file. This way, they no pay, you simply login your License Key Server, locate their key, save a copy of it, then click delete to their key (yes, I will make that process better in later versions). Mark my words, you will have your money by the end of the day, if not almost instantly. Once they pay, you take the key and re-add it to the License Key Server.
 
