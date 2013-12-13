@@ -8,23 +8,23 @@ Have you ever built a cool app or a website and by time the project was over and
 This project is a work in progress... what that means is that the script works great, however I could really clean it up a bit and will as we move forward and I rollout version releases here: https://github.com/icryptic/License-Key-Manager/releases
 
 
-* Php Standalone Requirements:
-PHP: 5.2
-allow_url_fopen: on
-short_open_tag: on
+Php Standalone Requirements:
+* PHP: 5.2
+* allow_url_fopen: on
+* short_open_tag: on
 
 
-* WordPress Edition Requirements:
-PHP: 5.2+
-WordPress 3.7.1 tested up to 3.8
+WordPress Edition Requirements:
+* PHP: 5.2+
+* WordPress 3.7.1 tested up to 3.8
 
 
-* Last Updated:
-php standalone (2010)
-wordpress edition (12/13/2013)
+Last Updated:
+* php standalone (2010)
+* wordpress edition (12/13/2013)
 
 
-* Documentation: WordPress Edition
+Documentation: WordPress Edition
 
 There are two parts to the License Key Manager WordPress Edition.
 
@@ -52,9 +52,9 @@ If you are preparing a brand new Wordpress site for a client or getting ready to
 
 You may also place the snippet within one of these files as well: 
 
-wp-config.php
-wp-load.php
-wp-settings.php
+* wp-config.php
+* wp-load.php
+* wp-settings.php
 
 For just plugins or themes, you probably will want to link a new function to the snippet. On other platforms, such as Drupal, Joomla, any php script - I recommend using an important file like a login or config file. 
 
