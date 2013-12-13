@@ -14,6 +14,7 @@ This project is a work in progress... what that means is that the script works g
 * allow_url_fopen: on
 * short_open_tag: on
 
+***
 
 #### WordPress Edition Requirements:
 * PHP: 5.2+
