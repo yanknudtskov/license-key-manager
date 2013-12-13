@@ -9,19 +9,19 @@ This project is a work in progress... what that means is that the script works g
 
 
 * Php Standalone Requirements:
-- PHP: 5.2
-- allow_url_fopen: on
-- short_open_tag: on
+PHP: 5.2
+allow_url_fopen: on
+short_open_tag: on
 
 
 * WordPress Edition Requirements:
-- PHP: 5.2+
-- WordPress 3.7.1 tested up to 3.8
+PHP: 5.2+
+WordPress 3.7.1 tested up to 3.8
 
 
 * Last Updated:
-- php standalone (2010)
-- wordpress edition (12/13/2013)
+php standalone (2010)
+wordpress edition (12/13/2013)
 
 
 * Documentation: WordPress Edition
@@ -52,9 +52,9 @@ If you are preparing a brand new Wordpress site for a client or getting ready to
 
 You may also place the snippet within one of these files as well: 
 
-- wp-config.php
-- wp-load.php
-- wp-settings.php
+wp-config.php
+wp-load.php
+wp-settings.php
 
 For just plugins or themes, you probably will want to link a new function to the snippet. On other platforms, such as Drupal, Joomla, any php script - I recommend using an important file like a login or config file. 
 
