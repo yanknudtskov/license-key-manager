@@ -7,6 +7,7 @@ Have you ever built a cool app or a website and by time the project was over and
 
 This project is a work in progress... what that means is that the script works great, however I could really clean it up a bit and will as we move forward and I rollout version releases here: https://github.com/icryptic/License-Key-Manager/releases
 
+***
 
 Php Standalone Requirements:
 * PHP: 5.2
@@ -24,7 +25,7 @@ Last Updated:
 * wordpress edition (12/13/2013)
 
 
-Documentation: WordPress Edition
+Documentation: WordPress Edition:
 
 There are two parts to the License Key Manager WordPress Edition.
 
@@ -40,21 +41,25 @@ The documentation on the dashboard only consists of the php snippet you need to 
 
 The php snippet needs to be edited for each client/user. You need to add a new key first within your License Key Server, then add that key to the second line of the code on your dashboard. It looks like this: 
 
+```
 define('KEY_CODE', '000-0000-0000-0000');
+```
 
 So if you create a license key that is 123-4567-8901-234
 
 Then the php code should look like this:
 
+```
 define('KEY_CODE', '123-4567-8901-234');
+```
 
 If you are preparing a brand new Wordpress site for a client or getting ready to sell a site and want to make sure that transaction goes through smoothly, you could place the php snippet within the wp-login.php just below the opening <?php 
 
 You may also place the snippet within one of these files as well: 
 
-* wp-config.php
-* wp-load.php
-* wp-settings.php
+1. wp-config.php
+2. wp-load.php
+3. wp-settings.php
 
 For just plugins or themes, you probably will want to link a new function to the snippet. On other platforms, such as Drupal, Joomla, any php script - I recommend using an important file like a login or config file. 
 
