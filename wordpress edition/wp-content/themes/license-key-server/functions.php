@@ -99,7 +99,7 @@ add_action( 'admin_menu', 'adjust_the_wp_menu', 999 );
 function lkm_admin_bar_render() {
     global $wp_admin_bar;
     $wp_admin_bar->remove_menu('comments');
-    echo '<style>#wp-admin-bar-site-name, #wp-admin-bar-new-content, #wp-admin-bar-search {display:none}#collapse-menu{display:none}pre{font-size:12px;background:#F7F7F7;border: 1px dashed #ccc;padding: 10px}</style>';
+    echo '<style>#wp-admin-bar-site-name, #wp-admin-bar-new-content, #wp-admin-bar-search {display:none}#collapse-menu{display:none}pre{font-size:12px;background:#F7F7F7;border: 1px dashed #ccc;padding: 10px}#screen-meta-links{display:none}</style>';
 }
 add_action( 'wp_before_admin_bar_render', 'lkm_admin_bar_render' );
 
