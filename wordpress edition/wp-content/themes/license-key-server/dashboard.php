@@ -1,6 +1,6 @@
 <?php ?>
 <div class="wrap about-wrap" id="pbody">
- <h1><?php bloginfo('name'); ?></h1><br />
+ <h1>Node: <?php bloginfo('name'); ?></h1><br />
    <h2 class="nav-tab-wrapper">
       <a href="#" class="nav-tab nav-tab-active"><?php _e( 'General' ); ?></a>
       <a href="edit.php?post_type=key" class="nav-tab"><?php _e( 'All Keys' ); ?></a>
