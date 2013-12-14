@@ -1,5 +1,10 @@
 <?php
 
+//icryptic version
+function icryptic_version() {
+    echo '1.0.9';
+}
+
 // Register New Dashboard
 include_once('dashboard_func.php');
 
