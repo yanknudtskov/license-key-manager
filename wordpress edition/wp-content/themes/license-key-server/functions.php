@@ -109,6 +109,24 @@ function remove_wp_logo( $wp_admin_bar ) {
 }
 add_action( 'admin_bar_menu', 'remove_wp_logo', 999 );
 
+// remove some more from adminbar
+add_action( 'admin_bar_menu', 'remove_wp_nodes', 999 );
+function remove_wp_nodes() 
+{
+    global $wp_admin_bar;   
+    $wp_admin_bar->remove_node( 'new-post' );
+    $wp_admin_bar->remove_node( 'new-page' );
+    $wp_admin_bar->remove_node( 'new-link' );
+    $wp_admin_bar->remove_node( 'new-media' );
+    $wp_admin_bar->remove_node('wp-logo');
+    $wp_admin_bar->remove_node('about');
+    $wp_admin_bar->remove_node('wporg');
+    $wp_admin_bar->remove_node('documentation');
+    $wp_admin_bar->remove_node('support-forums');
+    $wp_admin_bar->remove_node('feedback');
+    $wp_admin_bar->remove_node('view-site');
+}
+
 // customize left wp-admin footer text
 function lkm_admin_footer() {
     echo '&copy ';
@@ -119,7 +137,8 @@ add_filter('admin_footer_text', 'lkm_admin_footer');
 
 // remove wp version from admin footer
 function lkm_version() {
-    echo 'License Key Manager (Server Node)';
+    echo 'License Key Manager (Server Node) v';
+    echo icryptic_version();
 }
 add_filter( 'update_footer', 'lkm_version', '1234');
  
