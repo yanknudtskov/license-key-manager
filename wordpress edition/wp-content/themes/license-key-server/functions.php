@@ -22,7 +22,7 @@ function license_key() {
 		'not_found_in_trash'  => __( 'No keys found in Trash', 'wp_license_key' ),
 	);
 	$rewrite = array(
-		'slug'                => 'license_key',
+		'slug'                => 'license-key',
 		'with_front'          => true,
 		'pages'               => false,
 		'feeds'               => false,
