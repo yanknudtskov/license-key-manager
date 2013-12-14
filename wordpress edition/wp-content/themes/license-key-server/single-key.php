@@ -8,8 +8,7 @@ if( have_posts() ) {
 
     while ( have_posts() ) : the_post();
 
-?>
-GOOD<?php
+echo "GOOD";
 
     endwhile;
 
