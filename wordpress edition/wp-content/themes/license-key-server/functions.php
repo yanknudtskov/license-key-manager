@@ -147,3 +147,93 @@ function lkm_version() {
 }
 add_filter( 'update_footer', 'lkm_version', '1234');
  
+//hide nag updates
+function wphidenag_updates(){
+    remove_action( 'admin_notices', 'update_nag', 3 );
+}
+add_action('admin_menu','wphidenag_updates');
+
+//get ready to change backend text
+add_filter('gettext', 'change_howdy', 10, 3);
+
+//start changing backend text
+function change_howdy($translated, $text, $domain) {
+
+    if (!is_admin() || 'default' != $domain)
+        return $translated;
+
+    if (false !== strpos($translated, 'Howdy'))
+        return str_replace('Howdy', 'Yeehaw', $translated);
+
+    if (false !== strpos($translated, 'My Sites'))
+        return str_replace('My Sites', 'My Nodes', $translated);
+ 
+    if (false !== strpos($translated, 'Public'))
+        return str_replace('Public', 'Active', $translated);
+
+    if (false !== strpos($translated, 'Password protected'))
+        return str_replace('Password protected', 'Safe mode', $translated);
+
+    //if (false !== strpos($translated, 'Private'))
+        //return str_replace('Private', 'Disabled', $translated);
+
+    if (false !== strpos($translated, 'Password Protected'))
+        return str_replace('Password Protected', 'Safe Mode', $translated);
+
+    if (false !== strpos($translated, 'Post updated'))
+        return str_replace('Post updated', 'Key updated', $translated);
+
+    if (false !== strpos($translated, 'Post published'))
+        return str_replace('Post published', 'Key created', $translated);
+
+    if (false !== strpos($translated, 'Site Title'))
+        return str_replace('Site Title', 'Node Name', $translated);
+
+    if (false !== strpos($translated, 'Tagline'))
+        return str_replace('Tagline', 'Description', $translated);
+
+    if (false !== strpos($translated, 'site is about'))
+        return str_replace('site is about', 'node is for', $translated);
+
+    if (false !== strpos($translated, 'General Settings'))
+        return str_replace('General Settings', 'Node Settings', $translated);
+
+    if (false !== strpos($translated, 'Site Address'))
+        return str_replace('Site Address', 'Node Address', $translated);
+
+    if (false !== strpos($translated, 'Add New Site'))
+        return str_replace('Add New Site', 'Add New Node', $translated);
+
+    if (false !== strpos($translated, 'Site added'))
+        return str_replace('Site added', 'Node added', $translated);
+
+    if (false !== strpos($translated, 'Edit Site'))
+        return str_replace('Edit Site', 'Update Node', $translated);
+
+    if (false !== strpos($translated, 'Create a New Site'))
+        return str_replace('Create a New Site', 'Create New Node', $translated);
+
+    if (false !== strpos($translated, 'Primary Site'))
+        return str_replace('Primary Site', 'Primary Node', $translated);
+
+    if (false !== strpos($translated, 'Draft'))
+        return str_replace('Draft', 'Preparing', $translated);
+
+    if (false !== strpos($translated, 'Publish'))
+        return str_replace('Publish', 'Start', $translated);
+
+    if (false !== strpos($translated, 'Visibility'))
+        return str_replace('Visibility', 'License', $translated);
+
+    if (false !== strpos($translated, 'Visibility'))
+        return str_replace('Visibility', 'License', $translated);
+
+    if (false !== strpos($translated, 'Private'))
+        return str_replace('Private', 'Inactive', $translated);
+
+    return $translated;
+}
+
+//disable theme updates
+remove_action( 'load-update-core.php', 'wp_update_themes' );
+add_filter( 'pre_site_transient_update_themes', create_function( '$a', "return null;" ) );
