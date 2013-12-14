@@ -24,7 +24,7 @@ This project is a work in progress... what that means is that the script works g
 
 #### Last Updated:
 * php standalone (2010)
-* wordpress edition (12/13/2013)
+* wordpress edition (12/14/2013)
 
 ***
 
