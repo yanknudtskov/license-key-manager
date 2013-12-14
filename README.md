@@ -28,7 +28,7 @@ This project is a work in progress... what that means is that the script works g
 
 ***
 
-#### Documentation: WordPress Edition:
+#### Documentation: WordPress Edition
 
 There are two parts to the License Key Manager WordPress Edition.
 
