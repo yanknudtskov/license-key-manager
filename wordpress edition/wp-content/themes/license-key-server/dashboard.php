@@ -11,16 +11,17 @@
       <a href="users.php" class="nav-tab"><?php _e( 'Users' ); ?></a>
       <a href="options-general.php" class="nav-tab"><?php _e( 'Settings' ); ?></a>
    </h2>
-    <div style="margin-top: 30px">
-<h4>Documentation: Client Node</h4>
-To get started, first read the <a target="_blank" href="https://docs.google.com/document/d/1mQFf3UhCT42_X_xM_JDCzemN2Py_aJTF-kdRc-lMpho/edit?usp=sharing">documentation</a>.
-<pre>//Your users unique license key
+<div style="margin-top: 30px">
+<div style="font-weight:bold;font-size:14px;margin-bottom:5px">= PHP API =</div>
+To get started, first read the <a target="_blank" href="https://docs.google.com/document/d/1mQFf3UhCT42_X_xM_JDCzemN2Py_aJTF-kdRc-lMpho/edit?usp=sharing">documentation</a>.<br />
+<pre>//your users unique license key
 define('KEY_CODE', '0000-0000-0000-0000');
 
-//Callback license key server
+//callback license key server
 $LICENSE_KEY = KEY_CODE;
 $keydata = file_get_contents("<?php echo get_bloginfo('wpurl'); ?>/?key=$LICENSE_KEY");
 
-if(strpos($keydata, 'GOOD') !== FALSE){ }else{ exit("INVALID LICENSE KEY"); }</pre>
+//if license good do noting or else exit
+if(strpos($keydata, 'GOOD') !== FALSE){ }else{ exit("TEMPORARILY UNAVAILABLE"); }</pre>
     </div>
 </div>
