@@ -3,6 +3,7 @@
 //call header
 get_header();
 
+//if invalid key
 echo "INVALID";
 
 //call footer
