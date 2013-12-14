@@ -3,8 +3,7 @@
 //call header
 get_header();
 
-?>
-INVALID<?php 
+echo "INVALID";
 
 //call footer
 get_footer(); 
