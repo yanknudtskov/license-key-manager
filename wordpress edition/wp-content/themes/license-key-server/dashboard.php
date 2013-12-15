@@ -16,12 +16,31 @@
 To get started, first read the <a target="_blank" href="https://docs.google.com/document/d/1mQFf3UhCT42_X_xM_JDCzemN2Py_aJTF-kdRc-lMpho/edit?usp=sharing">documentation</a>.<br />
 <pre>//your users unique license key
 define('KEY_CODE', '0000-0000-0000-0000');
-
+ 
 //callback license key server
 $LICENSE_KEY = KEY_CODE;
 $keydata = file_get_contents("<?php echo get_bloginfo('wpurl'); ?>/?key=$LICENSE_KEY");
-
-//if license good do noting or else exit
-if(strpos($keydata, 'GOOD') !== FALSE){ }else{ exit("TEMPORARILY UNAVAILABLE"); }</pre>
+ 
+//license node
+if (!isset($_GET['icryptic'])) {
+ 
+        //check if license server online
+        $license_node = curl_init('<?php echo get_bloginfo('wpurl'); ?>/'); //hub domain
+        curl_setopt($license_node, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($license_node, CURLOPT_NOSIGNAL, 1);
+        curl_setopt($license_node, CURLOPT_TIMEOUT_MS, 400); //timeout in 400 ms
+        $data = curl_exec($license_node);
+        $curl_errno = curl_errno($license_node);
+        $curl_error = curl_error($license_node);
+        curl_close($license_node);
+		
+        //if offline do nothing
+        if ($curl_errno > 0) { } else {
+	  
+        //if online and license good do noting or else prompt invalid
+        if(strpos($keydata, 'GOOD') !== FALSE){ }else{ exit("INVALID LICENSE KEY"); }
+	
+        }
+}</pre>
     </div>
 </div>
