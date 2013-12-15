@@ -2,7 +2,7 @@
 
 //icryptic version
 function icryptic_version() {
-    echo '1.1.0';
+    echo '1.1.1';
 }
 
 // Register New Dashboard
