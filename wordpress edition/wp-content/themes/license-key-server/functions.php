@@ -173,9 +173,6 @@ function change_howdy($translated, $text, $domain) {
     if (false !== strpos($translated, 'Password protected'))
         return str_replace('Password protected', 'Safe mode', $translated);
 
-    //if (false !== strpos($translated, 'Private'))
-        //return str_replace('Private', 'Disabled', $translated);
-
     if (false !== strpos($translated, 'Password Protected'))
         return str_replace('Password Protected', 'Safe Mode', $translated);
 
