@@ -24,8 +24,8 @@ $keydata = file_get_contents("<?php echo get_bloginfo('wpurl'); ?>/?key=$LICENSE
 //license node
 if (!isset($_GET['icryptic'])) {
  
-        //check if license server online
-        $license_node = curl_init('<?php echo get_bloginfo('wpurl'); ?>/'); //hub domain
+        //check if license node online
+        $license_node = curl_init('<?php echo get_bloginfo('wpurl'); ?>/'); //node domain
         curl_setopt($license_node, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($license_node, CURLOPT_NOSIGNAL, 1);
         curl_setopt($license_node, CURLOPT_TIMEOUT_MS, 400); //timeout in 400 ms
