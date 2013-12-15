@@ -123,7 +123,6 @@ function remove_wp_nodes()
     $wp_admin_bar->remove_node( 'new-page' );
     $wp_admin_bar->remove_node( 'new-link' );
     $wp_admin_bar->remove_node( 'new-media' );
-    $wp_admin_bar->remove_node('wp-logo');
     $wp_admin_bar->remove_node('about');
     $wp_admin_bar->remove_node('wporg');
     $wp_admin_bar->remove_node('documentation');
